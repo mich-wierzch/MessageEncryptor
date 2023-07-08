@@ -2,21 +2,17 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Encryption {
     private Scanner scanner;
-    private Random random;
     private ArrayList<Character> list;
     private ArrayList<Character> shuffledList;
     private char character;
-    private String line;
     private char[] letters;
 
     public Encryption(){
         scanner = new Scanner(System.in);
-        random = new Random();
         list = new ArrayList<>();
         shuffledList = new ArrayList<>();
         character = ' ';
