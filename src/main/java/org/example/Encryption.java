@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Encryption {
-    private Scanner scanner;
-    private ArrayList<Character> list;
+    private final Scanner scanner;
+    private final ArrayList<Character> list;
     private ArrayList<Character> shuffledList;
     private char character;
     private char[] letters;
@@ -43,7 +43,7 @@ public class Encryption {
         shuffledList.clear();
 
         for (int i=32; i < 127; i++) {
-            list.add(Character.valueOf(character));
+            list.add(character);
             character++;
         }
         shuffledList = new ArrayList<>(list);
